@@ -1,17 +1,19 @@
-let nums = [1, 2, 100, 4, 5, 6, 7, 8, 9, -1];
-let a = ["min", "max"];
-if (nums.length > 0) {
-  a[0] = nums[0];
-  a[1] = nums[0];
+function definingMinMax(nums) {
+  let minMaxArray = ["min", "max"];
+  if (nums.length > 0) {
+    minMaxArray[0] = nums[0];
+    minMaxArray[1] = nums[0];
+  }
+
+  for (let i = 0; i < nums.length; i++) {
+    if (minMaxArray[0] > nums[i]) {
+      minMaxArray[0] = nums[i];
+    }
+    if (minMaxArray[1] < nums[i]) {
+      minMaxArray[1] = nums[i];
+    }
+  }
+  return minMaxArray;
 }
 
-for (let i = 0; i < nums.length; i++) {
-  console.log(nums[i]);
-  if (a[0] > nums[i]) {
-    a[0] = nums[i];
-  }
-  if (a[1] < nums[i]) {
-    a[1] = nums[i];
-  }
-}
-console.log(a);
+console.log(definingMinMax([100, 99, 2]));
