@@ -1,4 +1,4 @@
-# Prework code
+# Pre-work code
 
 This repository contains two pre-work coding challenges.
 
