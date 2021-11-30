@@ -16,4 +16,4 @@ function definingMinMax(nums) {
   return minMaxArray;
 }
 
-console.log(definingMinMax([100, 99, 2]));
+console.log(definingMinMax([20, 50, 12, 6, 14, 8]));
